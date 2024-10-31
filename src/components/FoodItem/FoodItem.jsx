@@ -1,0 +1,25 @@
+import React from 'react';
+import './FoodItem.css';
+import { assets } from '../../assets/frontend_assets/assets';
+
+const FoodItem = ({ id, name, price, description, image }) => { // Added 'image' to props
+  return (
+    <div className='food-item'>
+      <div className="food-item-img-container">
+        <img className='food-item-image' src={image} alt={name} /> {/* Fixed class name */}
+      </div>
+      <div className="food-item-info">
+        <div className="food-item-name-rating">
+          <p>
+            {name}
+        
+          </p>
+        </div>
+        <p className="food-item-desc">{description}</p>
+        <p className="food-item-price">Rs {price}</p>
+      </div>
+    </div>
+  );
+};
+
+export default FoodItem;

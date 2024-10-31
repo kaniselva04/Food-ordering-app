@@ -1,0 +1,60 @@
+.explore-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.explore-menu h1 {
+    color: #262626;
+    font-weight: 500;
+}
+
+.explore-menu-text {
+    max-width: 70%;
+    color: rgb(0, 0, 0);
+}
+
+.explore-menu-list {
+    display: flex; /* Aligns items in a row */
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    gap: 30px;
+    margin: 20px 0;
+    overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+.explore-menu-list::-webkit-scrollbar {
+    display: none; /* Hides scrollbar */
+}
+
+.explore-menu-item {
+    display: flex; /* Aligns image and text */
+    flex-direction: column; /* Stacks image on top of text */
+    align-items: center; /* Center items */
+}
+
+.explore-menu-item img {
+    width: 7.5vw;
+    min-width: 80px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.explore-menu-item p {
+    margin-top: 10px;
+    color: rgb(62, 48, 79);
+    font-size: max(1.4vw, 16px);
+    cursor: pointer;
+}
+
+.explore-menu hr {
+    margin: 10px 0;
+    height: 2px;
+    background-color: #e2e2e2;
+    border: none;
+}
+.explore-menu-list-item .active{
+    border: 4px solid tomato;
+    padding: 2px;
+}
