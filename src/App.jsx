@@ -24,11 +24,11 @@ const App = () => {
        <Route path='/SignUp' element={<SignUp/>}/>
         < Route path='/display' element={<Home/>}/>
         <Route path='/cart' element={<Cart/>}/>
-        <Route path='/payment' element={<Payment/>}/>
-        <Route path="/OrderPlaced" element={<OrderPlaced/>} />
         <Route path="/last" element={<Last/>} />
         <Route path='/cart/order' element={<PlaceOrder/>}/>
-       
+        <Route path="/" element={<Home />} /> {/* Your Home component */}
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/OrderPlaced" element={<OrderPlaced />} />
         </Routes>   
     </div>
     </>
