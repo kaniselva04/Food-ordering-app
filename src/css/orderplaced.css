@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5e9ce; /* Soft, light background */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Order Placed Container */
+  .order-placed-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  .success-message {
+    font-size: 24px;
+    color: #28a745; /* Success green color */
+    margin-bottom: 25px;
+    font-weight: bold;
+  }
+  
+  /* Order Details */
+  .order-details h2 {
+    font-size: 26px;
+    color: #555;
+    margin-bottom: 15px;
+    font-weight: 500;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+  }
+  
+  /* Item List */
+  .item-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .item-list li {
+    font-size: 18px;
+    color: #666;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .item-list li:last-child {
+    border-bottom: none;
+  }
+  
+  /* Item Name and Price */
+  .item-name {
+    text-align: left;
+  }
+  
+  .item-price {
+    text-align: right;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  /* Total Bill Section */
+  .total-bill {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: inset 0 3px 8px rgba(0, 0, 0, 0.05); /* Inner shadow for elegance */
+  }
+  
+  .total-bill h3 {
+    font-size: 22px;
+    color: #333;
+    margin: 0;
+  }
+  
+  .total-bill .amount {
+    font-size: 28px;
+    color: #e74c3c; /* Bold red for total bill */
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  /* Button Styles */
+  .proceed-button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 30px;
+  }
+  
+  .proceed-button:hover {
+    background-color: #218838;
+  }
+  
+  .proceed-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(40, 167, 69, 0.2);
+  }
+  

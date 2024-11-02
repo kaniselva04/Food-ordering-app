@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5e9ce;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Payment Container */
+  .Payment {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  /* Header */
+  .Payment h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  /* Bill Section */
+  .bill-section {
+    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .bill-section h3 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .bill-section p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Payment Options */
+  .payment-options {
+    margin-bottom: 20px;
+  }
+  
+  .payment-options h3 {
+    font-size: 20px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .payment-options label {
+    font-size: 18px;
+    color: #333;
+    margin-left: 8px;
+  }
+  
+  .payment-options input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .payment-options div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  /* UPI QR Section */
+  .upi-qr {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .upi-qr h3 {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .upi-qr canvas {
+    margin-top: 10px;
+  }
+  
+  /* Proceed Button */
+  button.submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.submit:hover {
+    background-color: #45a049;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .Payment {
+      width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    button.submit {
+      font-size: 16px;
+      padding: 10px;
+    }
+  
+    .bill-section p, .payment-options label {
+      font-size: 16px;
+    }
+  }
+  
