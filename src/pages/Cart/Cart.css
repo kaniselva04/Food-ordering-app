@@ -1,0 +1,65 @@
+.cart {
+    padding: 20px; /* Space around the cart container */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded corners */
+    max-width: 800px; /* Maximum width of the cart */
+    margin: auto; /* Center the cart on the page */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.cart-items {
+    margin-top: 10px; /* Space above the items */
+}
+
+.cart-items-title {
+    display: grid; /* Use grid layout */
+    grid-template-columns: 60px 1fr 100px 80px 100px 100px; /* Define columns for image, title, price, etc. */
+    font-weight: bold; /* Bold titles for emphasis */
+    padding-bottom: 10px; /* Space below the title */
+    border-bottom: 2px solid #ddd; /* Bottom border for separation */
+}
+
+.cart-items-item {
+    display: grid; /* Grid layout for individual items */
+    grid-template-columns: 60px 1fr 100px 80px 100px 100px; /* Match the title layout */
+    align-items: center; /* Center content vertically */
+    padding: 10px 0; /* Padding for spacing */
+    border-bottom: 1px solid #eee; /* Divider line between items */
+}
+
+.cart-items-item img {
+    width: 50px; /* Fixed width for item images */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 4px; /* Optional rounding */
+}
+
+button {
+    background-color: #ff4d4d; /* Red background for remove button */
+    border: none; /* Remove border */
+    color: white; /* White text */
+    padding: 8px 12px; /* Padding for button */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #ff1a1a; /* Darker red on hover */
+}
+
+.cart-items-item p {
+    margin: 0; /* Remove default margin */
+}
+
+.cart-empty {
+    text-align: center; /* Center the empty cart message */
+    font-size: 18px; /* Larger font for visibility */
+    color: #777; /* Gray color */
+}
+.cart-total {
+    font-size: 20px; /* Increase font size for total */
+    font-weight: bold; /* Bold text for emphasis */
+    margin-top: 20px; /* Space above total */
+    padding-top: 10px; /* Padding above the text */
+    border-top: 2px solid #ddd; /* Top border for separation */
+}
