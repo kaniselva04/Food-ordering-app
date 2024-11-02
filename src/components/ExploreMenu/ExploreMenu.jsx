@@ -5,9 +5,10 @@ import { menu_list } from '../../assets/frontend_assets/assets';
 const ExploreMenu = ({ category, setCategory }) => {
   return (
     <div className="explore-menu" id="explore-menu">
-      <h1>Explore the Menu</h1>
+      <h1>Check Out Our Delicious Menu!!</h1>
       <p className="explore-menu-text">
-        Discover a world of delicious options crafted to satisfy every craving; whether you’re in the mood for something savory, sweet, or spicy, our menu has exactly what you need to indulge in pure culinary delight.
+      Where flavor meets the soul – dine with us for an unforgettable taste journey!<br></br>
+      Indulge in flavors that tell a story. Every meal, a memorable experience.
       </p>
       <div className="explore-menu-list">
         {menu_list.map((item, index) => {
