@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { QRCodeCanvas } from 'qrcode.react'; 
+//import { QRCodeCanvas } from 'qrcode.react'; 
 import '../css/payment.css';
 
 const Payment = () => {
