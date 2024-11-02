@@ -1,8 +1,11 @@
 import React, { useState, useContext } from 'react';
 import { StoreContext } from '../../context/StoreContext';
 import './PlaceOrder.css';
+import { useNavigate } from 'react-router-dom';
+
 
 const PlaceOrder = () => {
+  const navigate = useNavigate();
   const { cartItems, food_list } = useContext(StoreContext);
   const [customerDetails, setCustomerDetails] = useState({
     name: '',
@@ -14,10 +17,15 @@ const PlaceOrder = () => {
     setCustomerDetails({ ...customerDetails, [e.target.name]: e.target.value });
   };
 
+  //this navigates to the payment confirmation page
+  //const handleCartClick = ()=>{
+   // navigate('/payment');}
+
   const handleSubmit = (e) => {
     e.preventDefault();
     // Here you would typically handle the order submission
-    console.log('Order placed:', customerDetails);
+   //console.log('Order placed:', customerDetails);
+    navigate('/payment');
   };
 
   const calculateTotalPrice = () => {
@@ -39,7 +47,7 @@ const PlaceOrder = () => {
           <option value="Cash on Delivery">Cash on Delivery</option>
         </select>
         <h3>Total Price: ${calculateTotalPrice().toFixed(2)}</h3>
-        <button type="submit">Submit Order</button>
+        <button type="submit" >Submit Order</button>
       </form>
     </div>
   );
