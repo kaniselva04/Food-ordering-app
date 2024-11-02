@@ -5,7 +5,7 @@ import '../css/orderplaced.css';
 const OrderPlaced = () => {
   const location = useLocation();
   
-  // Destructuring the state passed from the Payment component
+
   const { billAmount, orderedItems } = location.state;
 
   return (

@@ -1,10 +1,18 @@
-.header{
-    height: 34vw;
-    margin:30px auto;
-    background: url('\header_img.png') no-repeat;
-    background-size: contain;
+.header {
+    height: 30vw; 
+    margin: 30px auto; 
+    background: url('/header_img.png') no-repeat center center; 
+    background-size: cover; 
     position: relative;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    color: rgb(255, 255, 255); 
+    padding: 20px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    filter: brightness(0.8);
 }
+
 .header-contents{
     position:absolute;
     display: flex;
